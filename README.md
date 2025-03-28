@@ -37,6 +37,7 @@ wellness_analyzer/
 ├── docs/
 │   ├── data_sources.md             # Documentation of data sources
 │   ├── location_research_template.md # Template for researching locations
+    ├── location_analysis_report.md  # Analysis Report of data gathered from locations
 │   └── research/                   # Individual location research files
 │       ├── barcelona_research.md
 │       ├── london_research.md
@@ -46,7 +47,6 @@ wellness_analyzer/
 ├── results/
 │   ├── figures/          # Generated visualizations
 │   └── reports/          # Analysis reports
-│       └── location_analysis_report.md
 ├── scripts/
 │   ├── hello_project.py     # Initial test script
 │   ├── location_analyzer.py # Core functionality
@@ -56,30 +56,28 @@ wellness_analyzer/
 ├── .gitignore         # Git ignore file
 ├── README.md          # This file
 └── requirements.txt   # Project dependencies
-Copy
 ## Installation and Setup
 
 1. **Clone the repository**
 git clone https://github.com/yourusername/wellness-analyzer.git
 cd wellness-analyzer
-Copy
+
 2. **Create and activate a virtual environment**
 python -m venv venv
 On Windows
 venv\Scripts\activate
 On macOS/Linux
-source venv/bin/activate
-Copy
-3. **Install dependencies**
+venv/bin/activate
+
+4. **Install dependencies**
 pip install -r requirements.txt
-Copy
 ## Usage
 
 ### Adding a new location
 
 1. Run the add_location.py script:
 python scripts/add_location.py
-Copy
+
 2. Select option 1 to add a new location
 
 3. Enter the requested metrics when prompted
@@ -90,7 +88,7 @@ Copy
 
 1. Run the add_location.py script:
 python scripts/add_location.py
-Copy
+
 2. Select option 2 to view all locations or option 3 to compare locations
 
 3. Follow the prompts to select specific locations and metrics for comparison
